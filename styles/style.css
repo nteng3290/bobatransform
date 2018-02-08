@@ -153,8 +153,9 @@ h1 {
   grid-column: 1/3; }
 
 main {
-  margin: 100px 0;
-  background: rgba(255, 255, 255, 0.7); }
+  margin: 100px 0; }
+  main .wrapper {
+    background: rgba(255, 255, 255, 0.7); }
 
 .wrapper {
   max-width: 1180px;
@@ -198,7 +199,21 @@ main {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    position: relative; }
+    .bbticon .cup::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 30px;
+      height: 250px;
+      border-radius: 50%;
+      top: 10px;
+      right: 20px;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.2)));
+      background: -webkit-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2));
+      background: -o-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2));
+      background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2)); }
     .bbticon .cup .third {
       width: 95%;
       height: 33%;
@@ -228,3 +243,12 @@ fieldset {
 
 .hidden {
   display: none; }
+
+.greentea {
+  background: rgba(117, 156, 78, 0.8); }
+
+.blacktea {
+  background: rgba(103, 49, 49, 0.8); }
+
+.milk {
+  background: rgba(244, 243, 203, 0.7); }

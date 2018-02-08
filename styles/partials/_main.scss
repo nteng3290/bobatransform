@@ -12,7 +12,9 @@ h1{
 }
 main{
     margin: 100px 0;
-    background: rgba(255,255,255,0.7);
+    .wrapper{
+        background: rgba(255,255,255,0.7);
+    }
 }
 .wrapper {
     max-width: 1180px;
@@ -40,6 +42,18 @@ main{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 30px;
+            height: 250px;
+            border-radius: 50%;
+            top: 10px;
+            right: 20px;
+            background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.2));
+        }
         .third{
             width: 95%;
             height: 33%;
@@ -65,4 +79,13 @@ fieldset{
 }
 .hidden{
     display: none;
+}
+.greentea {
+    background: rgba(117,156,78,0.8);
+}
+.blacktea{
+    background: rgba(103,49,49,0.8);
+}
+.milk{
+    background: rgba(244,243,203,0.7);
 }
