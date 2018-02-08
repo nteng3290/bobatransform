@@ -5,45 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BBT Mixer</title>
+    <link href="https://fonts.googleapis.com/css?family=Capriola" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="bbticon">
-            <div class="lid"></div>
-            <div class="cup">
-                <div class="third"></div>
-                <div class="third"></div>
-                <div class="third"></div>
+    <header>
+        <div class="wrapper">
+            <h1>transform your boba</h1>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="bbticon">
+                <div class="lid"></div>
+                <div class="cup">
+                    <div class="third"></div>
+                    <div class="third"></div>
+                    <div class="third"></div>
+                </div>
+            </div>
+            <div class="addons">
+                <form action="">
+                    <fieldset>
+                        <button id="teaBase">1. pick a base</button>
+                        <div class="teas hidden">
+                            <div class="blackTea">
+                                <label for="black">black tea</label>
+                                <input type="radio" name="beverage" id="black" value="black">
+                            </div>
+                            <div class="greenTea">
+                                <label for="green">green tea</label>
+                                <input type="radio" name="beverage" id="green" value="green">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="addMilk">
+                        <button>2. add milk?</button>
+                        <div class="milks hidden">
+                            <div class="yesMilk">
+                                <label for="milk">yassss please</label>
+                                <input type="radio" name="milk" id="yesMilk" value="yesMilk">
+                            </div>
+                            <div class="noMilk">
+                                <label for="none">no thanks</label>
+                                <input type="radio" name="milk" id="noMilk" value="noMilk">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="addFlavour">
+                        <button>3. add a flavour enhancement</button>
+                        <div class="addFlavourNoMilk hidden">
+                            <div class="flavour">
+                                <label for="rose">Rose</label>
+                                <input type="radio" name="flavour" class="flavourShot" id="rose" value="rose">
+                            </div>
+                            <div class="flavour">
+                                <label for="grape">Grape</label>
+                                <input type="radio" name="flavour" class="flavourShot" id="grape" value="grape">
+                            </div>
+                            <div class="flavour">
+                                <label for= "peach">Peach</label>
+                                <input type="radio" name="flavour" class="flavourShot" id="peach" value= "peach">
+                            </div>
+                            <div class="flavour">
+                                <label for="none">None</label>
+                                <input type="radio" name="flavour" class="flavourShot" id="none" value="none">
+                            </div>
+                        </div>
+                        <div class="addFlavourWithMilk hidden">
+                            <div class="flavour">
+                                <label for="taro">Taro</label>
+                                <input type="radio" name="flavour" class="flavourShot" id="taro" value="taro">
+                            </div>
+                            <div class="flavour">
+                                <label for="honeyDew">Honey Dew</label>
+                                <input type="radio" name="flavour" class="flavourShot" id="honeyDew" value="honeyDew">
+                            </div>
+                            <div class="flavour">
+                                <label for="strawberry">Strawberry</label>
+                                <input type="radio" name="flavour" class="flavourShot" id="strawberry" value="strawberry">
+                            </div>
+                            <div class="flavour">
+                                <label for="none">None</label>
+                                <input type="radio" name="flavour" class="flavourShot" id="none" value="none">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="addToppings">
+                        <button>4. add a flavour enhancement</button>
+                        <div class="toppings hidden">
+                            <div class="topping">
+                                <label for="pearl">Pearl</label>
+                                <input type="radio" name="toppings" id="taro" value="taro">
+                            </div>
+                            <div class="topping">
+                                <label for="grassJelly">Grass Jelly</label>
+                                <input type="radio" name="toppings" id="grassJelly" value="grassJelly">
+                            </div>
+                            <div class="topping">
+                                <label for="redBean">Red Bean</label>
+                                <input type="radio" name="toppings" id="redBean" value="redBean">
+                            </div>
+                            <div class="topping">
+                                <label for="coffeeJelly">Coffee Jelly</label>
+                                <input type="radio" name="toppings" id="coffeeJelly" value="coffeeJelly">
+                            </div>
+                            <div class="topping">
+                                <label for="pudding">Pudding</label>
+                                <input type="radio" name="toppings" id="pudding" value="pudding">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button class="randomize">randomize</button><button class="finalize">finalize!</button> 
+                </form>
             </div>
         </div>
-        <form action="">
-            <fieldset class="tea base">
-                <button>1. pick a base</button>
-                <label for="black">black tea</label>
-                <input type="radio" name="beverage" id="black" value="black">
-                <label for="green">green tea</label>
-                <input type="radio" name="beverage" id="green" value="green">
-            </fieldset>
-            <fieldset class="add milk">
-                <button>2. add milk?</button>
-                <label for="milk">yassss please</label>
-                <input type="radio" name="milk" id="yes" value="yes">
-                <label for="none">no thanks</label>
-                <input type="radio" name="milk" id="none" value="none">
-            </fieldset>
-            <fieldset class="add flavour">
-                <button>3. add a flavour enhancement</button>
-                <label for="rose">Rose</label>
-                <input type="radio" name="flavour" id="rose" value="rose">
-                <label for="none">no thanks</label>
-                <input type="radio" name="flavour" id="none" value="none">
-                <label for="flavour">yassss please</label>
-                <input type="radio" name="flavour" id="yes" value="yes">
-                <label for="flavour">yassss please</label>
-                <input type="radio" name="milk" id="yes" value="yes">
-            </fieldset>
-        </form>
-    </div>
+    </main>
+    <!-- JQuery -->
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <!-- Custom JavaScript -->
+    <script src="scripts/script.js"></script>
 </body>
 </html>
