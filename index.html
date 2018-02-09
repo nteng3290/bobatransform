@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BBT Mixer</title>
-    <link href="https://fonts.googleapis.com/css?family=Capriola" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Capriola|Londrina+Outline" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -19,9 +19,9 @@
             <div class="bbticon">
                 <div class="lid"></div>
                 <div class="cup">
-                    <div class="third"></div>
-                    <div class="third"></div>
-                    <div class="third"></div>
+                    <div class="contents">
+                        <div class="addins"></div>
+                    </div>
                 </div>
             </div>
             <div class="addons">
@@ -39,8 +39,8 @@
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset class="addMilk">
-                        <button>2. add milk?</button>
+                    <fieldset>
+                        <button id="addMilk">2. add milk?</button>
                         <div class="milks hidden">
                             <div class="yesMilk">
                                 <label for="milk">yassss please</label>
@@ -52,8 +52,8 @@
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset class="addFlavour">
-                        <button>3. add a flavour enhancement</button>
+                    <fieldset>
+                        <button id="addFlavour">3. add a flavour enhancement</button>
                         <div class="addFlavourNoMilk hidden">
                             <div class="flavour">
                                 <label for="rose">Rose</label>
@@ -92,7 +92,7 @@
                         </div>
                     </fieldset>
                     <fieldset class="addToppings">
-                        <button>4. add a flavour enhancement</button>
+                        <button>4. add toppings</button>
                         <div class="toppings hidden">
                             <div class="topping">
                                 <label for="pearl">Pearl</label>
@@ -116,7 +116,8 @@
                             </div>
                         </div>
                     </fieldset>
-                    <button class="randomize">randomize</button><button class="finalize">finalize!</button> 
+                    <!-- <button class="randomize">randomize</button> -->
+                    <button class="finalize">finalize!</button> 
                 </form>
             </div>
         </div>

@@ -1,0 +1,33 @@
+.hidden{
+    display: none;
+}
+.greentea {
+    background: linear-gradient(rgba(117,156,78,0.4),rgba(117,156,78,0.8));
+}
+.blacktea{
+    background:linear-gradient(rgba(158,72,40,0.4),rgba(158,72,40,0.8));
+}
+.milkgreen{
+    background: linear-gradient(rgba(244,243,203,0.7), rgba(117,156,78,0.8));
+}
+.milkblack{
+    background: linear-gradient(rgba(244,243,203,0.7), rgba(158,72,40,0.8));
+}
+.taro{
+    background: linear-gradient(rgba(244,243,203,0.7), rgba(190,125,246,0.8));
+}
+.honeydew{
+    background: linear-gradient(rgba(244,243,203,0.7), rgba(135, 255, 185, 0.8));
+}
+.strawberry{
+    background: linear-gradient(rgba(244,243,203,0.7), rgba(255, 145, 196, 0.9));
+}
+.rosegreen{
+    background: linear-gradient(rgba(117,156,78,0.4),rgba(238, 67, 81, 0.8));
+}
+.roseblack{
+    background:linear-gradient(rgba(158,72,40,0.4),rgba(238, 67, 81, 0.8));
+}
+.transparent{
+    background: transparent;
+}
