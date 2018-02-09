@@ -230,7 +230,13 @@ main {
     .bbticon .cup .contents {
       width: 95%;
       height: 100%;
-      border: 2px solid darkgrey; }
+      margin-bottom: 10px;
+      border: 2px solid darkgrey;
+      border-top: none;
+      border-radius: 0 0 15px 15px;
+      -webkit-transition: background 0.5s;
+      -o-transition: background 0.5s;
+      transition: background 0.5s; }
 
 .addons {
   width: 50%; }
@@ -270,47 +276,71 @@ fieldset {
   background: -o-linear-gradient(rgba(158, 72, 40, 0.4), rgba(158, 72, 40, 0.8));
   background: linear-gradient(rgba(158, 72, 40, 0.4), rgba(158, 72, 40, 0.8)); }
 
-.milkgreen {
+.milk.greentea {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 243, 203, 0.7)), to(rgba(117, 156, 78, 0.8)));
   background: -webkit-linear-gradient(rgba(244, 243, 203, 0.7), rgba(117, 156, 78, 0.8));
   background: -o-linear-gradient(rgba(244, 243, 203, 0.7), rgba(117, 156, 78, 0.8));
   background: linear-gradient(rgba(244, 243, 203, 0.7), rgba(117, 156, 78, 0.8)); }
 
-.milkblack {
+.milk.blacktea {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 243, 203, 0.7)), to(rgba(158, 72, 40, 0.8)));
   background: -webkit-linear-gradient(rgba(244, 243, 203, 0.7), rgba(158, 72, 40, 0.8));
   background: -o-linear-gradient(rgba(244, 243, 203, 0.7), rgba(158, 72, 40, 0.8));
   background: linear-gradient(rgba(244, 243, 203, 0.7), rgba(158, 72, 40, 0.8)); }
 
-.taro {
+.milk.taro {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 243, 203, 0.7)), to(rgba(190, 125, 246, 0.8)));
   background: -webkit-linear-gradient(rgba(244, 243, 203, 0.7), rgba(190, 125, 246, 0.8));
   background: -o-linear-gradient(rgba(244, 243, 203, 0.7), rgba(190, 125, 246, 0.8));
   background: linear-gradient(rgba(244, 243, 203, 0.7), rgba(190, 125, 246, 0.8)); }
 
-.honeydew {
+.milk.honeydew {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 243, 203, 0.7)), to(rgba(135, 255, 185, 0.8)));
   background: -webkit-linear-gradient(rgba(244, 243, 203, 0.7), rgba(135, 255, 185, 0.8));
   background: -o-linear-gradient(rgba(244, 243, 203, 0.7), rgba(135, 255, 185, 0.8));
   background: linear-gradient(rgba(244, 243, 203, 0.7), rgba(135, 255, 185, 0.8)); }
 
-.strawberry {
+.milk.strawberry {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 243, 203, 0.7)), to(rgba(255, 145, 196, 0.9)));
   background: -webkit-linear-gradient(rgba(244, 243, 203, 0.7), rgba(255, 145, 196, 0.9));
   background: -o-linear-gradient(rgba(244, 243, 203, 0.7), rgba(255, 145, 196, 0.9));
   background: linear-gradient(rgba(244, 243, 203, 0.7), rgba(255, 145, 196, 0.9)); }
 
-.rosegreen {
+.rose.greentea {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(117, 156, 78, 0.4)), to(rgba(238, 67, 81, 0.8)));
   background: -webkit-linear-gradient(rgba(117, 156, 78, 0.4), rgba(238, 67, 81, 0.8));
   background: -o-linear-gradient(rgba(117, 156, 78, 0.4), rgba(238, 67, 81, 0.8));
   background: linear-gradient(rgba(117, 156, 78, 0.4), rgba(238, 67, 81, 0.8)); }
 
-.roseblack {
+.rose.blacktea {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 72, 40, 0.4)), to(rgba(238, 67, 81, 0.8)));
   background: -webkit-linear-gradient(rgba(158, 72, 40, 0.4), rgba(238, 67, 81, 0.8));
   background: -o-linear-gradient(rgba(158, 72, 40, 0.4), rgba(238, 67, 81, 0.8));
   background: linear-gradient(rgba(158, 72, 40, 0.4), rgba(238, 67, 81, 0.8)); }
 
-.transparent {
-  background: transparent; }
+.peach.greentea {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(117, 156, 78, 0.4)), to(rgba(250, 97, 26, 0.8)));
+  background: -webkit-linear-gradient(rgba(117, 156, 78, 0.4), rgba(250, 97, 26, 0.8));
+  background: -o-linear-gradient(rgba(117, 156, 78, 0.4), rgba(250, 97, 26, 0.8));
+  background: linear-gradient(rgba(117, 156, 78, 0.4), rgba(250, 97, 26, 0.8)); }
+
+.peach.blacktea {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 72, 40, 0.4)), to(rgba(250, 97, 26, 0.8)));
+  background: -webkit-linear-gradient(rgba(158, 72, 40, 0.4), rgba(250, 97, 26, 0.8));
+  background: -o-linear-gradient(rgba(158, 72, 40, 0.4), rgba(250, 97, 26, 0.8));
+  background: linear-gradient(rgba(158, 72, 40, 0.4), rgba(250, 97, 26, 0.8)); }
+
+.grape.greentea {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(117, 156, 78, 0.4)), to(rgba(126, 23, 223, 0.8)));
+  background: -webkit-linear-gradient(rgba(117, 156, 78, 0.4), rgba(126, 23, 223, 0.8));
+  background: -o-linear-gradient(rgba(117, 156, 78, 0.4), rgba(126, 23, 223, 0.8));
+  background: linear-gradient(rgba(117, 156, 78, 0.4), rgba(126, 23, 223, 0.8)); }
+
+.grape.blacktea {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 72, 40, 0.4)), to(rgba(126, 23, 223, 0.8)));
+  background: -webkit-linear-gradient(rgba(158, 72, 40, 0.4), rgba(126, 23, 223, 0.8));
+  background: -o-linear-gradient(rgba(158, 72, 40, 0.4), rgba(126, 23, 223, 0.8));
+  background: linear-gradient(rgba(158, 72, 40, 0.4), rgba(126, 23, 223, 0.8)); }
+
+.pearl {
+  background: url("../assets/bean.svg"); }

@@ -71,7 +71,11 @@ main{
         .contents{
             width: 95%;
             height: 100%;
+            margin-bottom: 10px;
             border: 2px solid darkgrey;
+            border-top: none;
+            border-radius: 0 0 15px 15px;
+            transition: background 0.5s;
         }
         // .third:first-of-type{
         //     grid-area: milk;

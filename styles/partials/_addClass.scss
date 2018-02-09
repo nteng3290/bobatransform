@@ -7,27 +7,39 @@
 .blacktea{
     background:linear-gradient(rgba(158,72,40,0.4),rgba(158,72,40,0.8));
 }
-.milkgreen{
+.milk.greentea{
     background: linear-gradient(rgba(244,243,203,0.7), rgba(117,156,78,0.8));
 }
-.milkblack{
+.milk.blacktea{
     background: linear-gradient(rgba(244,243,203,0.7), rgba(158,72,40,0.8));
 }
-.taro{
+.milk.taro{
     background: linear-gradient(rgba(244,243,203,0.7), rgba(190,125,246,0.8));
 }
-.honeydew{
+.milk.honeydew{
     background: linear-gradient(rgba(244,243,203,0.7), rgba(135, 255, 185, 0.8));
 }
-.strawberry{
+.milk.strawberry{
     background: linear-gradient(rgba(244,243,203,0.7), rgba(255, 145, 196, 0.9));
 }
-.rosegreen{
+.rose.greentea{
     background: linear-gradient(rgba(117,156,78,0.4),rgba(238, 67, 81, 0.8));
 }
-.roseblack{
+.rose.blacktea{
     background:linear-gradient(rgba(158,72,40,0.4),rgba(238, 67, 81, 0.8));
 }
-.transparent{
-    background: transparent;
+.peach.greentea{
+    background:linear-gradient(rgba(117,156,78,0.4),rgba(250, 97, 26, 0.8));
+}
+.peach.blacktea{
+    background:linear-gradient(rgba(158,72,40,0.4),rgba(250, 97, 26, 0.8));
+}
+.grape.greentea{
+    background:linear-gradient(rgba(117,156,78,0.4),rgba(126, 23, 223, 0.8));
+}
+.grape.blacktea{
+    background:linear-gradient(rgba(158,72,40,0.4),rgba(126, 23, 223, 0.8));
+}
+.pearl{
+    background: url('../assets/bean.svg');
 }
