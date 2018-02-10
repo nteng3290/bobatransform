@@ -1,5 +1,13 @@
+$primary: rgb(100, 149, 237);
+$primaryTransparent: rgba(100, 149, 237, 0.6);
+$accent: hotpink;
+$fontColor: slateblue;
+$fontAccent: hotpink;
+
 @import "partials/_setup.scss";
 @import "partials/_button.scss";
 @import "partials/_main.scss";
-@import "partials/_addClass.scss";
+@import "partials/_animations.scss";
+@import "partials/_addClass.scss"
+
 

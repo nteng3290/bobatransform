@@ -3,22 +3,30 @@ html{
     text-transform: uppercase;
     background: url(../assets/geometry2.png);
 }
+img{
+    max-width: 100%;
+}
 h1{
     font-family: 'Londrina Outline', cursive;
-    margin: 50px 0 0 0;
+    margin: 50px 0 10px 0;
     text-align: center;
-    color: slateblue;
+    color: $fontColor;
     font-size: 100px;
     grid-column: 1/3;
+}
+h2{
+    font-family: 'Londrina Outline', cursive;
+    margin: 0;
+    text-align: center;
+    color: $fontAccent;
+    font-size: 50px;
 }
 .wrapper {
     max-width: 1180px;
     margin:0 auto;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
 }
 main{
-    margin: 50px 0;
+    // margin: 50px 0;
     .wrapper{
         display: flex;
         flex-direction: row;
@@ -28,31 +36,24 @@ main{
 }
 
 .bbticon{
-    // grid-column: 1;
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     .lid{
-        width:80%;
+        width:70%;
         height: 15px;
         border: 3px solid darkgrey;
         border-radius:15px;
     }
     .cup{
-        width: 70%;
-        height: 500px;
+        width: 60%;
+        height: 450px;
         border: 3px solid darkgrey;
         border-radius: 0 0 15px 15px;
         border-top: none;
         display: flex;
-        // grid-template-columns: 1fr;
-        // grid-template-rows: 1fr 1fr 1fr;
-        // grid-template-areas: 
-        // "milk"
-        // "tea"
-        // "tea" ;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -64,8 +65,8 @@ main{
             width: 30px;
             height: 250px;
             border-radius: 50%;
-            top: 10px;
-            right: 20px;
+            top: 20px;
+            right: 30px;
             background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.2));
         }
         .contents{
@@ -76,16 +77,21 @@ main{
             border-top: none;
             border-radius: 0 0 15px 15px;
             transition: background 0.5s;
+            position: relative;
         }
-        // .third:first-of-type{
-        //     grid-area: milk;
-        // }
+        .addins{
+            width: 100%;
+            height: 33%;
+            position: absolute;
+            bottom: 0;
+        }
     }
 }
 .addons{
-   width: 50%;
+   width: 55%;
 }
 fieldset{
+    display: flex;
     border: none;
     padding: 0;
     margin: 10px 0;
@@ -97,6 +103,34 @@ fieldset{
 .toppings{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    // justify-content: space-around;
+    flex-wrap: wrap;
 }
-
+input[type=radio]{
+    display: none;
+}
+.start{
+    width: 50px;
+}
+.blackTea,
+.greenTea,
+.yesMilk,
+.noMilk,
+.flavour,
+.topping{
+    @extend .button;
+    width: 130px;
+    background: $primaryTransparent;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    label{
+        padding: 10px;
+        cursor: pointer;
+        font-size: 14px;
+        text-align: center;
+    }
+}

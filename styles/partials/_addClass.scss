@@ -1,6 +1,9 @@
 .hidden{
     display: none;
 }
+.selected{
+    background: $accent;
+}
 .greentea {
     background: linear-gradient(rgba(117,156,78,0.4),rgba(117,156,78,0.8));
 }
@@ -9,6 +12,8 @@
 }
 .milk.greentea{
     background: linear-gradient(rgba(244,243,203,0.7), rgba(117,156,78,0.8));
+    // animation-name: slideIn;
+    // animation-duration: 1s;
 }
 .milk.blacktea{
     background: linear-gradient(rgba(244,243,203,0.7), rgba(158,72,40,0.8));
@@ -41,5 +46,5 @@
     background:linear-gradient(rgba(158,72,40,0.4),rgba(126, 23, 223, 0.8));
 }
 .pearl{
-    background: url('../assets/bean.svg');
+    background: url('../assets/bobba.png');
 }
