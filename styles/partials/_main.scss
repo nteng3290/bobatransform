@@ -5,6 +5,7 @@ html{
 }
 img{
     max-width: 100%;
+    display: block;
 }
 h1{
     font-family: 'Londrina Outline', cursive;
@@ -13,6 +14,12 @@ h1{
     color: $fontColor;
     font-size: 100px;
     grid-column: 1/3;
+    @media (max-width: 940px) {
+        font-size: 80px;
+    }
+    @media (max-width: 480px) {
+        font-size: 60px;
+    }
 }
 h2{
     font-family: 'Londrina Outline', cursive;
@@ -24,6 +31,7 @@ h2{
 .wrapper {
     max-width: 1180px;
     margin:0 auto;
+    
 }
 main{
     // margin: 50px 0;
@@ -32,11 +40,26 @@ main{
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        @media (max-width: 940px) {
+        width: 100%;
+        }
+        @media (max-width: 480px) {
+            flex-direction: column-reverse;
+        }
     }
 }
 
 .bbticon{
     width: 45%;
+    @media (max-width: 940px) {
+        width: 40%;
+    }
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+    @media (max-width: 480px) {
+        // position: fixed;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,6 +69,9 @@ main{
         height: 15px;
         border: 3px solid darkgrey;
         border-radius:15px;
+        @media (max-width: 480px) {
+            width: 70%;
+        }
     }
     .cup{
         width: 60%;
@@ -58,6 +84,14 @@ main{
         align-items: center;
         justify-content: center;
         position: relative;
+        @media (max-width: 940px) {
+        width: 60%;
+        height: 350px;
+        }
+        @media (max-width: 480px) {
+            width: 60%;
+            height: 200px;
+        }
         &::after{
             content: '';
             position: absolute;
@@ -68,6 +102,9 @@ main{
             top: 20px;
             right: 30px;
             background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.2));
+            @media (max-width: 480px) {
+                height: 100px;
+            }
         }
         .contents{
             width: 95%;
@@ -78,23 +115,57 @@ main{
             border-radius: 0 0 15px 15px;
             transition: background 0.5s;
             position: relative;
-        }
-        .addins{
-            width: 100%;
-            height: 33%;
-            position: absolute;
-            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
+.addins{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    .pearl,
+    .grassJelly,
+    .redBean,
+    .coffeeJelly,
+    .pudding{
+        position: absolute;
+        bottom:0;
+        opacity: 0.8;
+    }
+    .pearl,
+    .redBean{
+        width: 20%;
+    }
+    // .pearl{
+    //     display: flex;
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    // }
+}
 .addons{
    width: 55%;
+   @media (max-width: 940px) {
+        width: 60%;
+    }
 }
 fieldset{
-    display: flex;
     border: none;
     padding: 0;
     margin: 10px 0;
+    position: relative;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+    .button{
+        float: left;
+        width: 40%;
+    }
+    .options{
+      float: left;
+      width: 60%;
+    }
 }
 .teas,
 .milks,
@@ -105,12 +176,32 @@ fieldset{
     flex-direction: row;
     // justify-content: space-around;
     flex-wrap: wrap;
+    @media (max-width: 480px) {
+        justify-content: space-between;
+    }
 }
 input[type=radio]{
-    display: none;
+    // display: none;
+}
+input[type=radio]:checked{
+    background: $accent;
 }
 .start{
     width: 50px;
+    left:250px;
+    position: absolute;
+    @media (max-width: 768px) {
+        left:-50px;
+        img {
+            transform: rotateY(180deg);
+        }
+    }
+}
+.replay{
+    @media (max-width: 480px) {
+        width: 80%;
+        min-width: 60px;
+    }
 }
 .blackTea,
 .greenTea,
@@ -127,10 +218,37 @@ input[type=radio]{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (max-width: 768px) {
+        width: 100px;
+    }
+    @media (max-width: 480px) {
+        height: 50px;
+    }
     label{
         padding: 10px;
         cursor: pointer;
         font-size: 14px;
         text-align: center;
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
+    }
+}
+.nameDrink{
+    display: flex;
+    flex-direction: column;
+    color: $fontColor;
+    margin: 20px 0;
+    label{
+        font-family: 'Londrina Outline', cursive;
+        font-size: 40px;
+    }
+    input[type=text]{
+        text-transform: uppercase;
+        font-size: 12px;
+        border: none;
+        border-bottom: 2px solid $primary;
+        width: 80%;
+        margin-top: 10px;
     }
 }

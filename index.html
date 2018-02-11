@@ -22,13 +22,50 @@
                 <div class="cup">
                     <div class="contents">
                         <button class="replay hidden" onclick="window.location.reload()">mix again?</button>
-                        <div class="addins"></div>
+                        <div class="addins">
+                            <div class="pearl hidden">
+                                <div class="pearl1">
+                                    <img src="assets/pearl.png" alt="">
+                                </div>
+                                <div class="pearl2"><img src="assets/pearl.png" alt=""></div>
+                                <div class="pearl3"><img src="assets/pearl.png" alt=""></div>
+                                <div class="pearl4"><img src="assets/pearl.png" alt=""></div>
+                                <div class="pearl5"><img src="assets/pearl.png" alt=""></div>
+                                <div class="pearl6">
+                                    <img src="assets/pearl.png" alt="">
+                                </div>
+                                <div class="pearl7">
+                                    <img src="assets/pearl.png" alt="">
+                                </div>
+                                <div class="pearl8">
+                                    <img src="assets/pearl.png" alt="">
+                                </div>
+                                <div class="pearl9">
+                                    <img src="assets/pearl.png" alt="">
+                                </div>
+                                <div class="pearl10">
+                                    <img src="assets/pearl.png" alt="">
+                                </div>
+                            </div>
+                            <div class="grassJelly hidden">
+                                <img src="assets/grassJelly.png" alt="">
+                            </div>
+                            <div class="redBean hidden">
+                                <img src="assets/bean.png" alt="">
+                            </div>
+                            <div class="coffeeJelly hidden">
+                                <img src="assets/coffeejelly.png" alt="">
+                            </div>
+                            <div class="pudding hidden">
+                                <img src="assets/pudding.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="addons">
                 <form action="">
-                    <fieldset>
+                    <fieldset class="clearfix">
                         <button id="teaBase">1. pick a base</button>
                         <div class="start"><img src="assets/left-arrow.png" alt=""></div>
                         <div class="options teas hidden">
@@ -42,7 +79,7 @@
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="clearfix">
                         <button id="addMilk">2. add milk?</button>
                         <div class="options milks hidden">
                             <div class="yesMilk">
@@ -55,7 +92,7 @@
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="clearfix">
                         <button id="addFlavour">3. add a flavour enhancement</button>
                         <div class="options addFlavourNoMilk hidden">
                             <div class="flavour rose">
@@ -94,12 +131,12 @@
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset class="addToppings">
-                        <button>4. add toppings</button>
+                    <fieldset class="clearfix" >
+                        <button class="addToppings">4. add toppings</button>
                         <div class="options toppings hidden">
                             <div class="topping">
                                 <label for="pearl">Pearl</label>
-                                <input type="radio" name="toppings" id="pear" value="pearl">
+                                <input type="radio" name="toppings" id="pearl" value="pearl">
                             </div>
                             <div class="topping">
                                 <label for="grassJelly">Grass Jelly</label>
@@ -117,6 +154,10 @@
                                 <label for="pudding">Pudding</label>
                                 <input type="radio" name="toppings" id="pudding" value="pudding">
                             </div>
+                            <div class="topping">
+                                <label for="noTopping">None</label>
+                                <input type="radio" name="toppings" id="noTopping" value="noTopping">
+                            </div>
                         </div>
                     </fieldset>
                     <div class="nameDrink hidden">
@@ -124,6 +165,7 @@
                         <input type="text" placeholder="put your name here" name="nameIt">
                     </div>
                     <button class="finalize">finalize!</button> 
+                    <button class="reset" onclick="window.location.reload()">reset</button>
                     <button class="done hidden">done!</button>
                 </form>
             </div>

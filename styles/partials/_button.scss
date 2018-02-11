@@ -11,4 +11,12 @@
 button{
     @extend .button;
     min-width: 250px;
+    text-transform: uppercase;
+    @media (max-width: 940px) {
+        width: 180px;
+        font-size: 14px;
+    }
+    @media (max-width: 480px) {
+        height: 50px;
+    }
 }
