@@ -13,7 +13,7 @@ $(".teas").on("click", function(){
         $(".contents").addClass("greentea");
         $(".contents").removeClass("blacktea");
     }
-    else if (userBase === "black"){
+    else{
         $(".blackTea").addClass("selected");
         $(".greenTea").removeClass("selected");
         $(".contents").addClass("blacktea");
@@ -79,45 +79,45 @@ $(".topping").on("change", function () {
 $(".toppings").on("click", function () {
     const userTopping = $("input[name=toppings]:checked").val();
     if (userTopping === "pearl") {
-        $(".pearl").removeClass("hidden");
+        $(".pearls").removeClass("hidden");
         $(".grassJelly").addClass("hidden");
-        $(".redBean").addClass("hidden");
+        $(".redBeans").addClass("hidden");
         $(".coffeeJelly").addClass("hidden");
         $(".pudding").addClass("hidden");
     }
     else if (userTopping === "grassJelly") {
         $(".grassJelly").removeClass("hidden");
-        $(".pearl").addClass("hidden");
-        $(".redBean").addClass("hidden");
+        $(".pearls").addClass("hidden");
+        $(".redBeans").addClass("hidden");
         $(".coffeeJelly").addClass("hidden");
         $(".pudding").addClass("hidden");
     }
     else if (userTopping === "redBean") {
-        $(".redBean").removeClass("hidden");
-        $(".pearl").addClass("hidden");
+        $(".redBeans").removeClass("hidden");
+        $(".pearls").addClass("hidden");
         $(".grassJelly").addClass("hidden");
         $(".coffeeJelly").addClass("hidden");
         $(".pudding").addClass("hidden");
     }
     else if (userTopping === "coffeeJelly") {
         $(".coffeeJelly").removeClass("hidden");
-        $(".pearl").addClass("hidden");
+        $(".pearls").addClass("hidden");
         $(".grassJelly").addClass("hidden");
-        $(".redBean").addClass("hidden");
+        $(".redBeans").addClass("hidden");
         $(".pudding").addClass("hidden");
     }
     else if (userTopping === "pudding") {
         $(".pudding").removeClass("hidden");
-        $(".pearl").addClass("hidden");
+        $(".pearls").addClass("hidden");
         $(".grassJelly").addClass("hidden");
-        $(".redBean").addClass("hidden");
+        $(".redBeans").addClass("hidden");
         $(".coffeeJelly").addClass("hidden");
     }
     else{
-        $(".pearl").addClass("hidden");
+        $(".pearls").addClass("hidden");
         $(".grassJelly").addClass("hidden");
         $(".coffeeJelly").addClass("hidden");
-        $(".redBean").addClass("hidden");
+        $(".redBeans").addClass("hidden");
         $(".pudding").addClass("hidden");
     }
 });
@@ -141,6 +141,10 @@ $(function(){
     $("#teaBase").on("click", function(){
         $(".start").addClass("hidden");
     });
+    buttonShow("#addMilk", ".milks");
+    buttonShow("#addFlavour", ".addFlavourNoMilk");
+    buttonShow("#addFlavour", ".addFlavourWithMilk");
+    buttonShow("#addToppings", ".toppings");
     hide("#black", ".milks");
     hide("#green",".milks");
 
@@ -166,7 +170,9 @@ $(function(){
         e.preventDefault();
         let userName = $("input[name=nameIt]").val();
         $(".addons").addClass("hidden");
-        $("h2").append(`${userName}`);
+        $("header .wrapper").append(`<h2>${userName}</h2>`);
+        $(".reset").addClass("hidden");
+        $(".done").addClass("hidden");
         $(".replay").removeClass("hidden");
     });
     // On click display options

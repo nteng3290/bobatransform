@@ -3,6 +3,7 @@
 }
 .selected{
     background: $accent;
+    animation: fadeIn 0.5s both;
 }
 .greentea {
     background: linear-gradient(rgba(117,156,78,0.4),rgba(117,156,78,0.8));
@@ -12,8 +13,6 @@
 }
 .milk.greentea{
     background: linear-gradient(rgba(244,243,203,0.7), rgba(117,156,78,0.8));
-    // animation-name: slideIn;
-    // animation-duration: 1s;
 }
 .milk.blacktea{
     background: linear-gradient(rgba(244,243,203,0.7), rgba(158,72,40,0.8));

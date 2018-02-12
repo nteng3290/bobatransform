@@ -1,0 +1,150 @@
+.addons{
+   width: 55%;
+   @media (max-width: 940px) {
+        width: 60%;
+    }
+}
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 10px 0;
+    position: relative;
+    @media (max-width: 480px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 412px) {
+        padding: 0;
+    }
+    .button{
+        float: left;
+        width: 40%;
+    }
+    .options{
+      float: left;
+      width: 60%;
+      @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+.teas,
+.milks,
+.addFlavourNoMilk,
+.addFlavourWithMilk,
+.toppings{
+    display: flex;
+    flex-direction: row;
+    animation: slideRight 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    // justify-content: space-around;
+    flex-wrap: wrap;
+    @media (max-width: 480px) {
+        justify-content: space-between;
+    }
+}
+input[type=radio]{
+    display: none;
+}
+input[type=radio]:checked{
+    background: $accent;
+}
+.start{
+    width: 50px;
+    left:250px;
+    position: absolute;
+	animation: pulse 0.5s ease-in-out infinite both;
+    @media (max-width: 768px) {
+        left:-50px;
+        img {
+            transform: rotateY(180deg);
+        }
+    }
+}
+.blackTea,
+.greenTea,
+.yesMilk,
+.noMilk,
+.flavour,
+.topping{
+    @extend .button;
+    width: 130px;
+    background: $primaryTransparent;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    @media (max-width: 768px) {
+        width: 100px;
+        margin-top:10px;
+    }
+    @media (max-width: 480px) {
+        height: 50px;
+    }
+    label{
+        padding: 10px;
+        cursor: pointer;
+        font-size: 14px;
+        text-align: center;
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
+    }
+}
+.finish{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;    
+    @media (max-width: 480px) {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    @media (max-width: 412px) {
+        padding: 0;
+    }
+    .finalize,
+    .reset{
+        margin-bottom: 10px;
+    }
+}
+.nameDrink{
+    display: flex;
+    flex-direction: column;
+    color: $fontColor;
+    margin: 20px 0;
+    animation: slideUp 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    @media (max-width: 480px) {
+        position: absolute;
+        left:30px;
+    }
+    @media (max-width: 412px) {
+        left: 40px;
+        width: 80%;
+    }
+    label{
+        font-family: 'Capriola', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        border: 2px dotted $primary;
+        width: 90%;
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+    input[type=text]{
+        text-align: center;
+        text-transform: uppercase;
+        background: transparent;
+        font-size: 12px;
+        border: none;
+        border-bottom: 2px solid $primary;
+        width: 90%;
+        margin-top: 10px;
+         @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+}
