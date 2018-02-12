@@ -85,10 +85,10 @@ input[type=radio]:checked{
     label{
         padding: 10px;
         cursor: pointer;
-        font-size: 14px;
+        font-size: 1.4rem;
         text-align: center;
         @media (max-width: 768px) {
-            font-size: 12px;
+            font-size: 1.2rem;
         }
     }
 }
@@ -126,7 +126,7 @@ input[type=radio]:checked{
     }
     label{
         font-family: 'Capriola', sans-serif;
-        font-size: 30px;
+        font-size: 3rem;
         text-align: center;
         border: 2px dotted $primary;
         width: 90%;
@@ -138,7 +138,7 @@ input[type=radio]:checked{
         text-align: center;
         text-transform: uppercase;
         background: transparent;
-        font-size: 12px;
+        font-size: 1.2rem;
         border: none;
         border-bottom: 2px solid $primary;
         width: 90%;
